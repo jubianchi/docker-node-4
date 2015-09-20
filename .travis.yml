@@ -5,5 +5,4 @@ services:
 
 script:
     - docker build -t docker-node-4 .
-    - chmod +x test/run.sh
-    - docker run --rm -it -v $(pwd)/run.sh:/test/run.sh --entrypoint /test/run.sh docker-node-4
+    - docker run --rm -it -v $(pwd)/run.sh:/test/run.sh --entrypoint bash docker-node-4 /test/run.sh
