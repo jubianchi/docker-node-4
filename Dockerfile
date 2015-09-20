@@ -15,4 +15,4 @@ RUN rm -rf /tmp/* /var/tmp/*
 
 ENV PATH /node-v4.1.0-linux-x64/bin:$PATH
 
-ENTRYPOINT "/node-v4.1.0-linux-x64/bin/node"
+ENTRYPOINT ["/node-v4.1.0-linux-x64/bin/node"]
